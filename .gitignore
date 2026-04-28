@@ -10,3 +10,7 @@ logs/
 # Credenciais e tokens
 credentials.json
 token.json
+
+# Cache do Python
+__pycache__/
+*.pyc
