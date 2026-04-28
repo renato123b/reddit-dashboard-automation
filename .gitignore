@@ -1,0 +1,12 @@
+# Pastas temporárias
+.tmp/
+
+# Pastas de Logs
+logs/
+
+# Variáveis de ambiente
+.env
+
+# Credenciais e tokens
+credentials.json
+token.json

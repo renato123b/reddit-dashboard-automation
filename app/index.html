@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Top 5 Dashboard</title>
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <div class="logo-icon"></div>
+            </div>
+
+            <div class="profile-hero">
+                <div class="hero-rings">
+                    <img src="https://ui-avatars.com/api/?name=A&background=111&color=FFD700" alt="Avatar" class="hero-avatar">
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><strong>200</strong><span>Posts Lidos</span></div>
+                    <div class="stat"><strong>10</strong><span>Top Filtrados</span></div>
+                </div>
+                <h2 class="hero-name">Agent UI</h2>
+                <span class="hero-handle">@automation</span>
+                <p class="hero-bio">⚡ Apresentando os top posts de automação da semana baseados em engajamento.</p>
+                <button class="primary-btn">Atualizar Dados</button>
+            </div>
+            
+            <div class="nav-section">
+                <h3>Comunidades</h3>
+                <ul class="tab-list">
+                    <li>
+                        <button class="tab-btn active" data-tab="n8n">
+                            <span class="tab-icon yellow-ring"></span>
+                            <div class="tab-text">
+                                <strong>r/n8n</strong>
+                                <span>5 Top Posts</span>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tab-btn" data-tab="automation">
+                            <span class="tab-icon gray-ring"></span>
+                            <div class="tab-text">
+                                <strong>r/automation</strong>
+                                <span>5 Top Posts</span>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Feed -->
+        <main class="feed">
+            <header class="feed-header">
+                <h1 id="current-tab-title">Posts Populares: <span class="highlight">r/n8n</span></h1>
+                <div class="feed-controls">
+                    <!-- Placeholder icons -->
+                    <span class="ctrl-icon">⌂</span>
+                    <span class="ctrl-icon">✉</span>
+                    <span class="ctrl-icon">♡</span>
+                </div>
+            </header>
+
+            <div class="posts-container" id="posts-container">
+                <!-- Posts will be injected here via JS -->
+                <div class="loading-state">Carregando dados da automação...</div>
+            </div>
+        </main>
+        
+        <!-- Right Panel -->
+        <aside class="right-panel">
+            <h3>Atividade Recente</h3>
+            <div class="activity-feed">
+                <!-- Mock Activities from the design -->
+                <div class="activity-item">
+                    <img src="https://ui-avatars.com/api/?name=P&background=333&color=fff" alt="User">
+                    <div class="act-text">
+                        <strong>Processamento n8n</strong><br>
+                        <span>Completado • 2 min atrás</span>
+                    </div>
+                    <button class="act-btn yellow">Log</button>
+                </div>
+                <div class="activity-item">
+                    <img src="https://ui-avatars.com/api/?name=A&background=333&color=fff" alt="User">
+                    <div class="act-text">
+                        <strong>Processamento auto</strong><br>
+                        <span>Completado • 2 min atrás</span>
+                    </div>
+                    <button class="act-btn">Log</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
