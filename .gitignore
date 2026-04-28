@@ -14,3 +14,6 @@ token.json
 # Cache do Python
 __pycache__/
 *.pyc
+
+# Documentação Interna da IA
+AGENTE.md
